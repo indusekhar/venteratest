@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+<nav  class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img class="logoimg" src="assets/img/logo.png" ></a>
+  <button  class="navbar-toggler"  type="button"  data-toggle="collapse"  data-target="#navbarSupportedContent"  aria-controls="navbarSupportedContent"  aria-expanded="false"  aria-label="Toggle navigation">
+    <span  class="navbar-toggler-icon"></span>
+  </button>
+  <div  class="collapse navbar-collapse navbar navbar-light bg-light"  id="navbarSupportedContent">
+    <ul  class="navbar-nav ml-auto ">
+      <li  class="nav-item">
+        <a  class="nav-link"  href="#">Home <span  class="sr-only">(current)</span></a>
+      </li>
+      <li  class="nav-item">
+        <a  class="nav-link"  href="#">Medicare <span  class="sr-only">(current)</span></a>
+      </li>
+      <li  class="nav-item">
+        <a  class="nav-link"  href="#">Medicaid <span  class="sr-only">(current)</span></a>
+      </li>
+      <li  class="nav-item">
+        <a  class="nav-link"  href="#">Private Insurance<span  class="sr-only">(current)</span></a>
+      </li>
+      <li  class="nav-item">
+        <a  class="nav-link"  href="#">Innovation Center<span  class="sr-only">(current)</span></a>
+      </li>
+      <li  class="nav-item">
+        <a  class="nav-link"  href="#">Contact Us<span  class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<div class="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div
+          ng2-carouselamos
+          class="slides-wrapper"
+          [items]="items"
+          [width]="1200"
+          [$prev]="prev"
+          [$next]="next"
+          [$item]="item"
+        >
+        </div>
+
+
+        <ng-template #prev>
+          <img src="assets/img/left-arrow.png" class="arrow" id="left" />
+        </ng-template>
+        <ng-template #next>
+          <img src="assets/img/right-arrow.png" class="arrow" id="right" />
+        </ng-template>
+        <ng-template #item let-item let-i="index">
+
+          <div class="items" class="col-sm-12">
+            <img src="{{ item.name }}" class="image-responsive">
+          </div>
+
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="assets/img/row211.jpg">
+      </div>
+      <div class="col-sm-6 text-center">
+        <h2>We are putting patients first.</h2>
+        <p class="lead">
+          We pledge to put patients first in all of our programs – Medicaid, Medicare, and the Health Insurance Exchanges. We must empower patients to work with their doctors and make health care decisions that are best for them.</p>
+        <p class="lead">
+          This means giving them meaningful information about quality and costs to be active health care consumers. It also includes supporting innovative approaches to improving quality, accessibility, and affordability.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+        <h4>Share Your Ideas</h4>
+        <p>We're seeking your ideas to help shape the development of future payment and service delivery models.</p>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+        <img src="assets/img/Row32.png" class="image-responsive">
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+        <h4>Webinars & Forums</h4>
+        <p>The CMS Innovation Center offers webinars and forums about its programs. These provide opportunities to learn about current programs as well as to ask questions.</p>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+        <img src="assets/img/Row31.png" class="image-responsive">
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+        <h4>Data & Reports</h4>
+        <p>The CMS Innovation Center contributes reports and datasets to the community of health care innovators, data researchers, and policy analysts.</p>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+        <img src="assets/img/Row33.png" class="image-responsive">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="fixed"></div>
+
+<div class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>Our Innovation Models</h3>
+        <p>The CMS Innovation Center has a growing portfolio testing various payment and service delivery models that aim to achieve better care for patients, smarter spending and healthier communities. Want to join a model? See which models are enrolling. Find an innovation model.</p>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="iconwrap">
+          <img src="assets/img/Row21.png" class="image-responsive">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center navbar-light bg-light">
+
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="assets/img/cmsfooter.png">
+    </div>
+    <div class="col-sm-4">
+      <h5 class="footer">A federal government website managed and paid for by the U.S. Centers for Medicare &
+        Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244</h5>
+
+    </div>
+    <div class="col-sm-4">
+      <img src="assets/img/footerlogo.png">
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>
